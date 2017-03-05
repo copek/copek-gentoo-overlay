@@ -26,7 +26,7 @@ SLOT="0"
 IUSE="test transmission"
 
 DEPEND="
- *       dev-python/setuptools[${PYTHON_USEDEP}]
+        dev-python/setuptools[${PYTHON_USEDEP}]
         >=dev-python/feedparser-5.2.1[${PYTHON_USEDEP}]
         >=dev-python/sqlalchemy-0.7.5[${PYTHON_USEDEP}]
         !~dev-python/sqlalchemy-0.9.0[${PYTHON_USEDEP}]
