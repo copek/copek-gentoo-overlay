@@ -22,32 +22,45 @@ SLOT="0"
 IUSE="test transmission"
 
 DEPEND="
-        dev-python/setuptools[${PYTHON_USEDEP}]
-        >=dev-python/feedparser-5.1.3[${PYTHON_USEDEP}]
+        #dev-python/setuptools[${PYTHON_USEDEP}]
+        >=dev-python/feedparser-5.2.1[${PYTHON_USEDEP}]
         >=dev-python/sqlalchemy-0.7.5[${PYTHON_USEDEP}]
         <dev-python/sqlalchemy-1.999[${PYTHON_USEDEP}]
+	!=dev-python/sqlalchemy-0.9.0[${PYTHON_USEDEP}]
         dev-python/pyyaml[${PYTHON_USEDEP}]
         >=dev-python/beautifulsoup-4.1:4[${PYTHON_USEDEP}]
-        <dev-python/beautifulsoup-4.4:4[${PYTHON_USEDEP}]
-        !~dev-python/beautifulsoup-4.2.0
+        <dev-python/beautifulsoup-4.5:4[${PYTHON_USEDEP}]
+        !=dev-python/beautifulsoup-4.2.0
         >=dev-python/html5lib-0.11[${PYTHON_USEDEP}]
         dev-python/PyRSS2Gen[${PYTHON_USEDEP}]
         dev-python/pynzb[${PYTHON_USEDEP}]
         dev-python/progressbar[${PYTHON_USEDEP}]
         dev-python/rpyc[${PYTHON_USEDEP}]
         dev-python/jinja[${PYTHON_USEDEP}]
-        >=dev-python/requests-1.0[${PYTHON_USEDEP}]
-        <dev-python/requests-2.99[${PYTHON_USEDEP}]
-        >=dev-python/python-dateutil-2.1[${PYTHON_USEDEP}]
-        !~dev-python/python-dateutil-2.2
+        >=dev-python/requests-2.8.0[${PYTHON_USEDEP}]
+        <dev-python/requests-3.0[${PYTHON_USEDEP}]
+        >=dev-python/python-dateutil-2.5.2[${PYTHON_USEDEP}]
         >=dev-python/jsonschema-2.0[${PYTHON_USEDEP}]
-        dev-python/python-tvrage[${PYTHON_USEDEP}]
-        dev-python/tmdb3[${PYTHON_USEDEP}]
+#        dev-python/python-tvrage[${PYTHON_USEDEP}]
+#        dev-python/tmdb3[${PYTHON_USEDEP}]
         dev-python/path-py[${PYTHON_USEDEP}]
-        >=dev-python/guessit-0.9.3[${PYTHON_USEDEP}]
-        <dev-python/guessit-2[${PYTHON_USEDEP}]
-        dev-python/APScheduler[${PYTHON_USEDEP}]
+        >=dev-python/guessit-2.0.3[${PYTHON_USEDEP}]
+        >=dev-python/APScheduler-3.0.3[${PYTHON_USEDEP}]
+	!=dev-python/APScheduler-3.1.0[${PYTHON_USEDEP}]
 "
+#pytvmaze>=1.4.8
+#ordereddict>=1.1
+## WebUI Requirements
+#cherrypy>=3.7.0
+#flask>=0.7
+#flask-restful>=0.3.3
+#flask-restplus==0.8.6
+#flask-compress>=1.2.1
+#flask-login>=0.3.2
+#flask-cors>=2.1.2
+#pyparsing>=2.0.3
+#Safe
+
 RDEPEND="${DEPEND}
         transmission? ( dev-python/transmissionrpc[${PYTHON_USEDEP}] )
 "
