@@ -22,7 +22,6 @@ SLOT="0"
 IUSE="test transmission"
 
 DEPEND="
-        dev-python/setuptools[${PYTHON_USEDEP}]
         >=dev-python/feedparser-5.2.1[${PYTHON_USEDEP}]
         >=dev-python/sqlalchemy-0.7.5[${PYTHON_USEDEP}]
         <dev-python/sqlalchemy-1.999[${PYTHON_USEDEP}]
@@ -41,26 +40,27 @@ DEPEND="
         <dev-python/requests-3.0[${PYTHON_USEDEP}]
         >=dev-python/python-dateutil-2.5.2[${PYTHON_USEDEP}]
         >=dev-python/jsonschema-2.0[${PYTHON_USEDEP}]
-        dev-python/python-tvrage[${PYTHON_USEDEP}]
-        dev-python/tmdb3[${PYTHON_USEDEP}]
         dev-python/path-py[${PYTHON_USEDEP}]
         >=dev-python/guessit-2.0.3[${PYTHON_USEDEP}]
         >=dev-python/APScheduler-3.0.3[${PYTHON_USEDEP}]
 	!=dev-python/APScheduler-3.1.0[${PYTHON_USEDEP}]
+	>=dev-python/ordereddict-1.1[${PYTHON_USEDEP}]
+	>=dev-python/cherrypy3.7.0[${PYTHON_USEDEP}]
+	>=dev-python/flask-0.7[${PYTHON_USEDEP}]
+        >=dev-python/flask-restful-0.3.3[${PYTHON_USEDEP}]
+        =dev-python/flask-restplus-0.8.6[${PYTHON_USEDEP}]
+        >=dev-python/flask-compress-1.2.1[${PYTHON_USEDEP}]
+        >=dev-python/flask-login-0.3.2[${PYTHON_USEDEP}]
+        >=dev-python/flask-cors-2.1.2[${PYTHON_USEDEP}]
+	>=dev-python/pyparsing-2.0.3[${PYTHON_USEDEP}]
 "
 #pytvmaze>=1.4.8
-#ordereddict>=1.1
 ## WebUI Requirements
-#cherrypy>=3.7.0
-#flask>=0.7
-#flask-restful>=0.3.3
-#flask-restplus==0.8.6
-#flask-compress>=1.2.1
-#flask-login>=0.3.2
-#flask-cors>=2.1.2
-#pyparsing>=2.0.3
 #Safe
-
+##OLD REQ
+        #dev-python/tmdb3[${PYTHON_USEDEP}]
+	#dev-python/python-tvrage[${PYTHON_USEDEP}]
+	#dev-python/setuptools[${PYTHON_USEDEP}]
 RDEPEND="${DEPEND}
         transmission? ( dev-python/transmissionrpc[${PYTHON_USEDEP}] )
 "
