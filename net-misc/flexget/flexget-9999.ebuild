@@ -46,7 +46,6 @@ DEPEND="
         >=dev-python/pathlib-1.0[${PYTHON_USEDEP}]
         >=dev-python/guessit-2.0.4[${PYTHON_USEDEP}]
         >=dev-python/APScheduler-3.2.0[${PYTHON_USEDEP}]
-        #dev-python/ordereddict[${PYTHON_USEDEP}]
         >=dev-python/cherrypy-3.7.0[${PYTHON_USEDEP}]
         >=dev-python/flask-0.7[${PYTHON_USEDEP}]
         >=dev-python/flask-restful-0.3.3[${PYTHON_USEDEP}]
@@ -57,6 +56,7 @@ DEPEND="
         >=dev-python/pyparsing-2.0.3[${PYTHON_USEDEP}]
         >=dev-python/future-0.15.2[${PYTHON_USEDEP}]
 "
+##OLD  dev-python/ordereddict[${PYTHON_USEDEP}]
 #terminaltables>=3.1.0
 #colorclass>=2.2.0
 ## WebUI Requirements
