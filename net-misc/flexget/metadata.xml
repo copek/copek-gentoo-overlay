@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <!-- maintainer-needed -->
+  <maintainer>
+		<email>cc@dd.ff</email>
+		<name>copek</name>
+  </maintainer>
   <use>
     <flag name="transmission">Support comminucation with <pkg>net-p2p/transmission</pkg></flag>
   </use>
