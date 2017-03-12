@@ -3,7 +3,7 @@
 
 EAPI=5
 
-REALNAME="Flask-Login"
+REALNAME="flask-login"
 REALVERSION="0.4.0"
 REPO_URI="http://pypi.python.org/packages/source/${REALNAME:0:1}/${REALNAME}/"
 SOURCEFILE="${REALNAME}-${REALVERSION}.tar.gz"
