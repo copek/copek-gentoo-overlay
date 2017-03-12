@@ -53,7 +53,7 @@ DEPEND="
         =dev-python/flask-restplus-0.8.6[${PYTHON_USEDEP}]
         >=dev-python/Flask-Compress-1.2.1[${PYTHON_USEDEP}]
         >=dev-python/flask-login-0.3.2[${PYTHON_USEDEP}]
-        >=dev-python/flask-cors-2.1.2[${PYTHON_USEDEP}]
+        >=dev-python/Flask-Cors-2.1.2[${PYTHON_USEDEP}]
 	>=dev-python/pyparsing-2.0.3[${PYTHON_USEDEP}]
 	dev-python/Safe[${PYTHON_USEDEP}]
 "
@@ -74,7 +74,7 @@ fi
 
 python_prepare_all() {
         # Prevent setup from grabbing nose from pypi
-        sed -e /setup_requires/d -i pavement.py || die
+        #sed -e /setup_requires/d -i pavement.py || die
 
         distutils-r1_python_prepare_all
 }
