@@ -4,7 +4,7 @@
 EAPI=5
 
 REALNAME="pytvmaze"
-REALVERSION="1.4.3"
+REALVERSION="2.0.8"
 REPO_URI="http://pypi.python.org/packages/source/${REALNAME:0:1}/${REALNAME}/"
 SOURCEFILE="${REALNAME}-${REALVERSION}.tar.gz"
 PYTHON_COMPAT=( python{2_7,2_7,3_5} )
