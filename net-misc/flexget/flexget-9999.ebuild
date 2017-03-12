@@ -44,7 +44,7 @@ DEPEND="
         >=dev-python/jsonschema-2.0[${PYTHON_USEDEP}]
         >=dev-python/path-py-8.1.1[${PYTHON_USEDEP}]
         >=dev-python/pathlib-1.0[${PYTHON_USEDEP}]
-        <=dev-python/guessit-2.0.4[${PYTHON_USEDEP}]
+        dev-python/guessit[${PYTHON_USEDEP}]
         >=dev-python/APScheduler-3.2.0[${PYTHON_USEDEP}]
         >=dev-python/terminaltables-3.1.0[${PYTHON_USEDEP}]
         >=dev-python/colorclass-2.2.0[${PYTHON_USEDEP}]
@@ -60,7 +60,7 @@ DEPEND="
         >=dev-python/future-0.15.2[${PYTHON_USEDEP}]
 "
 ##OLD  dev-python/ordereddict[${PYTHON_USEDEP}]
-
+#revisar  <=dev-python/guessit-2.0.4[${PYTHON_USEDEP}]
 RDEPEND="${DEPEND}
         transmission? ( dev-python/transmissionrpc[${PYTHON_USEDEP}] )
 "
