@@ -48,6 +48,7 @@ DEPEND="
         dev-python/tmdb3[${PYTHON_USEDEP}]
         dev-python/path-py[${PYTHON_USEDEP}]
         >=dev-python/guessit-0.9.3[${PYTHON_USEDEP}]
+        <dev-python/guessit-2[${PYTHON_USEDEP}]
         dev-python/APScheduler[${PYTHON_USEDEP}]
 "
 #        <dev-python/guessit-2[${PYTHON_USEDEP}]
