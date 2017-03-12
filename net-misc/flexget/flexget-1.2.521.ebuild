@@ -22,14 +22,15 @@ SLOT="0"
 IUSE="test transmission"
 
 DEPEND="
+        dev-python/setuptools[${PYTHON_USEDEP}]
         >=dev-python/feedparser-5.2.1[${PYTHON_USEDEP}]
         >=dev-python/sqlalchemy-0.7.5[${PYTHON_USEDEP}]
         <dev-python/sqlalchemy-1.999[${PYTHON_USEDEP}]
 	!=dev-python/sqlalchemy-0.9.0[${PYTHON_USEDEP}]
         dev-python/pyyaml[${PYTHON_USEDEP}]
-        >=dev-python/beautifulsoup-4.1:4[${PYTHON_USEDEP}]
-        <dev-python/beautifulsoup-4.5:4[${PYTHON_USEDEP}]
-        !=dev-python/beautifulsoup-4.2.0
+        >=dev-python/beautifulsoup-4.1[${PYTHON_USEDEP}]
+        <dev-python/beautifulsoup-4.5[${PYTHON_USEDEP}]
+        !=dev-python/beautifulsoup-4.2.0[${PYTHON_USEDEP}]
         >=dev-python/html5lib-0.11[${PYTHON_USEDEP}]
         dev-python/PyRSS2Gen[${PYTHON_USEDEP}]
         dev-python/pynzb[${PYTHON_USEDEP}]
@@ -44,6 +45,7 @@ DEPEND="
         >=dev-python/guessit-2.0.3[${PYTHON_USEDEP}]
         >=dev-python/APScheduler-3.0.3[${PYTHON_USEDEP}]
 	!=dev-python/APScheduler-3.1.0[${PYTHON_USEDEP}]
+	>=dev-python/pytvmaze-1.4.8[${PYTHON_USEDEP}]
 	>=dev-python/ordereddict-1.1[${PYTHON_USEDEP}]
 	>=dev-python/cherrypy-3.7.0[${PYTHON_USEDEP}]
 	>=dev-python/flask-0.7[${PYTHON_USEDEP}]
@@ -53,14 +55,12 @@ DEPEND="
         >=dev-python/flask-login-0.3.2[${PYTHON_USEDEP}]
         >=dev-python/flask-cors-2.1.2[${PYTHON_USEDEP}]
 	>=dev-python/pyparsing-2.0.3[${PYTHON_USEDEP}]
+	dev-python/Safe[${PYTHON_USEDEP}]
 "
-#pytvmaze>=1.4.8
-## WebUI Requirements
-#Safe
 ##OLD REQ
         #dev-python/tmdb3[${PYTHON_USEDEP}]
 	#dev-python/python-tvrage[${PYTHON_USEDEP}]
-	#dev-python/setuptools[${PYTHON_USEDEP}]
+
 RDEPEND="${DEPEND}
         transmission? ( dev-python/transmissionrpc[${PYTHON_USEDEP}] )
 "
