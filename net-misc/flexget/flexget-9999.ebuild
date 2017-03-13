@@ -53,7 +53,7 @@ DEPEND="
         >=dev-python/flask-restful-0.3.3[${PYTHON_USEDEP}]
         =dev-python/flask-restplus-0.8.6[${PYTHON_USEDEP}]
         >=dev-python/Flask-Compress-1.2.1[${PYTHON_USEDEP}]
-        >=dev-python/flask-login-0.4.0[${PYTHON_USEDEP}]
+        >=dev-python/Flask-Login-0.4.0[${PYTHON_USEDEP}]
         >=dev-python/Flask-Cors-2.1.2[${PYTHON_USEDEP}]
         >=dev-python/pyparsing-2.0.3[${PYTHON_USEDEP}]
         dev-python/zxcvbn-python[${PYTHON_USEDEP}]
