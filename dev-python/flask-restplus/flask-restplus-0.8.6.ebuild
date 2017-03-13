@@ -29,3 +29,4 @@ python_prepare_all() {
 
 	distutils-r1_python_prepare_all
 }
+PATCHES=( "${FILESDIR}"/distutils_r1-tests-packaging-fix.patch )
