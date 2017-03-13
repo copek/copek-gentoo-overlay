@@ -6,7 +6,7 @@ EAPI=6
 PYTHON_COMPAT=( python2_7 )
 # TODO: Add python3_5 once deps have it
 
-inherit distutils-r1
+inherit distutils-r1 eutils
 
 if [[ ${PV} != 9999 ]]; then
         MY_P="FlexGet-${PV}"
@@ -69,3 +69,16 @@ DEPEND+=" test? ( dev-python/nose[${PYTHON_USEDEP}] )"
 if [[ ${PV} != 9999 ]]; then
         S="${WORKDIR}/${MY_P}"
 fi
+
+python_prepare_all() {
+        # Prevent setup from grabbing nose from pypi
+        #sed -e /setup_requires/d -i pavement.py || die
+
+        distutils-r1_python_prepare_all
+}
+
+python_test() {
+        cp -lr tests setup.cfg "${BUILD_DIR}" || die
+        run_in_build_dir nosetests -v --attr=!online > "${T}/tests-${EPYTHON}.log" \
+                || die "Tests fail with ${EPYTHON}"
+}
