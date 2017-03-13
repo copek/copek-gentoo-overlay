@@ -5,6 +5,7 @@ EAPI=5
 
 REALNAME="terminaltables"
 REALVERSION="3.1.0"
+#no baja
 REPO_URI="http://pypi.python.org/packages/source/${REALNAME:0:1}/${REALNAME}/"
 SOURCEFILE="${REALNAME}-${REALVERSION}.tar.gz"
 PYTHON_COMPAT=( python{2_7,2_7,3_3,3_4,3_5} )
