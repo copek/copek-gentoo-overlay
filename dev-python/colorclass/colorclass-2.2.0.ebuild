@@ -15,7 +15,7 @@ inherit gs-pypi
 DESCRIPTION="Colorful worry-free console applications for Linux, Mac OS X, and Windows."
 
 HOMEPAGE="https://github.com/Robpol86/colorclass"
-LICENSE=""
+LICENSE="MIT"
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"

@@ -15,7 +15,7 @@ inherit gs-pypi
 DESCRIPTION="Python implementation of Dropbox's realistic password strength estimator, zxcvbn"
 
 HOMEPAGE="https://github.com/srob650/pytvmaze"
-LICENSE=""
+LICENSE="MIT"
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"

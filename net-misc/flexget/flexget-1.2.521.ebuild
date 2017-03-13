@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
@@ -28,9 +28,9 @@ DEPEND="
 	<dev-python/sqlalchemy-1.999[${PYTHON_USEDEP}]
 	!~dev-python/sqlalchemy-0.9.0
 	dev-python/pyyaml[${PYTHON_USEDEP}]
-	>=dev-python/beautifulsoup-4.1[${PYTHON_USEDEP}]
-	<dev-python/beautifulsoup-4.5[${PYTHON_USEDEP}]
-	!~dev-python/beautifulsoup-4.2.0
+	>=dev-python/beautifulsoup-4.1:4[${PYTHON_USEDEP}]
+	<dev-python/beautifulsoup-4.5:4[${PYTHON_USEDEP}]
+	!~dev-python/beautifulsoup-4.2.0:*
 	>=dev-python/html5lib-0.11[${PYTHON_USEDEP}]
 	dev-python/PyRSS2Gen[${PYTHON_USEDEP}]
 	dev-python/pynzb[${PYTHON_USEDEP}]
@@ -58,7 +58,7 @@ DEPEND="
 	dev-python/Safe[${PYTHON_USEDEP}]
 "
 ##OLD REQ
-        #dev-python/tmdb3[${PYTHON_USEDEP}]
+	#dev-python/tmdb3[${PYTHON_USEDEP}]
 	#dev-python/python-tvrage[${PYTHON_USEDEP}]
 
 RDEPEND="${DEPEND}
@@ -73,8 +73,8 @@ else
 fi
 
 python_prepare_all() {
-        # Prevent setup from grabbing nose from pypi
-        #sed -e /setup_requires/d -i pavement.py || die
+	# Prevent setup from grabbing nose from pypi
+	#sed -e /setup_requires/d -i pavement.py || die
 
 	distutils-r1_python_prepare_all
 }
