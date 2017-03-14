@@ -70,6 +70,7 @@ if [[ ${PV} == 9999 ]]; then
 	DEPEND+=" dev-python/paver[${PYTHON_USEDEP}]"
 else
 	S="${WORKDIR}/${MY_P}"
+	DEPEND+=" dev-python/paver[${PYTHON_USEDEP}]"
 fi
 
 python_prepare_all() {
